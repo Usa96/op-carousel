@@ -19950,11 +19950,19 @@ body:not(.stretched) .slider-parallax .slider-inner {
 }
 
 .swiper-slide-bg {
-  background-size: cover; /* Use 'cover' to fill the slide while maintaining the aspect ratio */
-  background-position: center; /* Center the image within the slide */
-  background-repeat: no-repeat; /* Prevents repetition of the image */
+  position: absolute;
   width: 100%;
   height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.background-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .slider-element .video-wrap,
@@ -19969,6 +19977,7 @@ body:not(.stretched) .slider-parallax .slider-inner {
   top: 0;
   left: 0;
 }
+
 
 .yt-bg-player .inlinePlayButton,
 .yt-bg-player .loading {
