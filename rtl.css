@@ -1,0 +1,58 @@
+/* rtl-support.css */
+
+/* General RTL direction override */
+[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+  }
+  
+  /* Header and nav alignment */
+  [dir="rtl"] .header-row {
+    flex-direction: row-reverse;
+  }
+  
+  /* Align text blocks */
+  [dir="rtl"] .heading-block,
+  [dir="rtl"] .portfolio-desc,
+  [dir="rtl"] .feature-box,
+  [dir="rtl"] .fbox-content,
+  [dir="rtl"] p,
+  [dir="rtl"] h1,
+  [dir="rtl"] h2,
+  [dir="rtl"] h3,
+  [dir="rtl"] h4,
+  [dir="rtl"] h5,
+  [dir="rtl"] h6 {
+    text-align: right;
+  }
+  
+  /* Flip image alignment if needed */
+  [dir="rtl"] .portfolio-image img,
+  [dir="rtl"] .fbox-media img {
+    margin-left: auto;
+    margin-right: 0;
+    display: block;
+  }
+  
+  /* Optional: adjust paddings/margins */
+  [dir="rtl"] .container {
+    padding-left: 1rem;
+    padding-right: 2rem;
+  }
+  
+  /* Reverse buttons or flex-based UI */
+  [dir="rtl"] .d-flex {
+    flex-direction: row-reverse;
+  }
+  
+  /* RTL-friendly menu container */
+  [dir="rtl"] .menu-container {
+    text-align: right;
+  }
+  
+  /* Fix dropdowns, navigation toggles if present */
+  [dir="rtl"] .primary-menu-trigger {
+    margin-left: 0;
+    margin-right: auto;
+  }
+  
